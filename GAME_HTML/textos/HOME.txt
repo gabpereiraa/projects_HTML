@@ -1,0 +1,36 @@
+MENU PRINCIPAL
+- HOME
+- CONSOLES
+	- PS
+	- XBOX
+- GALERIAS
+	- FOTOS
+	- VIDEOS
+- FALE CONOSCO
+
+[AQUI ENTRA IMAGEM - banner1.jpg] 
+[AQUI ENTRA IMAGEM - banner2.jpg]
+
+
+[AQUI ENTRA IMAGEM - xbox-one.png]
+
+CONSOLE XBOX ONE
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+
+[AQUI ENTRA IMAGEM - ps4.png]
+
+CONSOLE PLAYSTATION
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+[AQUI ENTRA IMAGEM - xbox-one.png]
+
+JOGOS
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+
+RODAPÉ
+Desenvolvido para curso de HTML5 e CSS3
+[AQUI ENTRA IMAGEM - logo-face.png]
+[AQUI ENTRA IMAGEM - logo-twitter.png]
+[AQUI ENTRA IMAGEM - logo-instagram.png]
