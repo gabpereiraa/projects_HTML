@@ -1,0 +1,492 @@
+@charset "UTF-8";
+
+/* = COMENTÁRIOS = */
+
+/* = Fonte = */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+} /* = Tirar Margem = */
+
+body{
+    /*background: #3a3a3a;*/
+    font-family: 'Open Sans', sans-serif; /*colocando fonte no texto*/
+    font-size: 1em; /* Tamanho da Fonte */
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex2{
+    display: flex;
+    align-items: center;
+}
+
+.flex3{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex4{
+    display: flex;
+    flex-wrap: wrap; /* Para ele se ajutar com a tela */
+    justify-content: space-evenly; /* Espaço uniforme entre os cards */
+}
+
+.flex5{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flex6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.botao{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.3em;
+    font-weight: 700;
+    background: #004560;
+    padding: 10px 20px;
+    border: 2px solid #FFF;
+    border-radius: 25px;
+}
+
+/* = CARDS = */
+.card{
+    margin-top: 25px;
+    width: 338px;
+    height: 520px;
+    background: #e8e8e8;
+    border: 1px solid #a1a1a1;
+    border-radius: 25px;
+    text-align: center;
+}
+.card img{
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card h2{
+    margin-top: 15px;
+}
+
+.card p{
+    text-align: left;
+    padding: 10px 30px 50px 30px;
+    color: #434343;
+}
+
+.card a{
+    padding: 10px 100px;
+    border: 0;
+}
+
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* ======== SMARTPHONE PORTRAIT ======== */
+header{
+    height: 60px;
+}
+
+#logo img{
+    width: 128px;
+    height: 128px;
+}
+
+#check{
+    display: none;
+}
+
+label{
+    font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0,0,0,0.5);
+}
+
+nav ul{
+    list-style: none;
+    background: #343538;
+    height: 100vh;
+    top: 60px;
+    position: fixed;
+    right: -100%; 
+    width: 100%;
+    transition: all 0.5s;  
+}
+
+nav ul li{
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: beige;
+}
+
+#check:checked ~ ul{
+    right: 0;
+}
+
+main{
+    height: 75vh;
+    background: url(img/banner_front.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+
+    /* Para centralizar o conteudo na horizontal e vertical */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: center; 
+
+}
+
+main h1{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+main h2{
+    font-size: 1em;
+    margin: 10px 0px 50px 0px;
+}
+
+/*= SEÇÃO SOBRE =*/
+#sobre{
+    padding: 50px 0px;
+    background: url(img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaque_sobre{
+    display: none; /*Esconder imagem no celular e tablet. obs: colocar para aparecer no pc*/
+} 
+
+#texto_sobre{
+    color: #FFF;
+    padding: 0px 10px;
+    font-size: 1.2em;
+}
+
+#texto_sobre h2{
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.topico_sobre{
+    margin-top: 20px;
+}
+
+.topico_sobre img{
+    margin-right: 10px;
+}
+
+/* = SEÇÃO ONE PAGE = */
+#onepage{
+    padding: 50px 10px;
+}
+
+#onepage h2{
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+#onepage p{
+    margin-bottom: 25px;
+    font-size: 1.2em;
+}
+
+#video iframe{
+    width: 340px;
+    height: 191px;
+    border: 0;
+    
+}
+
+/* = SEÇÃO WIREFRAME = */
+#wireframe{
+    padding: 50px 0px;
+    background: url(img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#texto_wire{
+    color: #FFF;
+    padding: 0px 10px;
+}
+
+#texto_wire h2{
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+#texto_wire p{
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+#texto_wire span{
+    display: none;
+}
+
+#qrcode{
+    display: none;
+}
+
+#conteudo{
+    padding: 50px 0px;
+}
+
+#conteudo h2{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2em;
+}
+
+#todos_conteudos{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#todos_conteudos a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+/* RODAPÉ */
+address{
+    padding: 35px 10px 50px 10px;
+    background: #9b9b9b;
+    color: #FFF;
+}
+
+address a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+address img{
+    padding-top: 15px;
+}
+
+#icone_local{
+    display: none;
+}
+
+#dados{
+    margin: 30px 0px 15px 0px;
+}
+
+#google_maps{
+    display: none;
+}
+
+footer{
+    padding: 50px 0px;
+    background: #343538;
+    font-size: 0.87em;
+    color: #FFF;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+#redes_sociais{
+    margin-bottom: 25px;
+}
+
+/* ======== SMARTPHONE LANDSCAPE ======== */
+@media (min-width: 576px){
+    /*body {
+        background-color: aqua;
+    }*/
+
+    .container{
+        max-width: 540px;
+    }
+
+    main h1, main h2{
+        text-shadow: #000 0.05em 0.05em 0.05em;
+    }
+
+    .flex5{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #redes_sociais{
+        margin: 0;
+    }
+}
+
+/* ======== TABLET PORTRAIT ======== */
+@media (min-width: 768px){
+    /*body {
+        background-color: brown;
+    }*/
+
+    .container{
+        max-width: 720px;
+    }
+
+    main{
+        height: 45vh;
+    }
+
+    main h1{
+        font-size: 5.5em;
+    }
+
+    main h2{
+        font-size: 2em;
+    }
+
+}
+
+/* ======== TABLET LANDSCAPE ======== */
+@media (min-width: 992px){
+    /*body {
+        background-color: blue;
+    }*/
+    
+    .container{
+        max-width: 960px;
+    }
+
+    main{
+        height: 70vh;
+    }
+
+}
+
+/* ============= PC ============= */
+@media (min-width: 1200px){
+    /*body {
+        background-color: red;
+    }*/
+    
+    .container{
+        max-width: 1140px;
+    }
+
+/* = Cabeçalho = */
+
+header{
+    height: 120px;
+}
+
+#logo img{
+    width: 189px;
+    height: 189px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+label{
+    display: none;
+}
+
+nav ul{
+    position: static;
+    height: auto;
+    background: transparent;
+    margin-top: 50px;
+}
+
+nav ul li{
+    float: left;
+    border: 0;
+}
+
+nav ul li a{
+    color: #343538;
+}
+
+nav ul li a:hover{
+    color: #4f2bee;
+}
+
+/* SEÇÃO SOBRE */
+#destaque_sobre{
+    display: inline; /*voltar a imagem*/
+}
+
+#destaque_sobre img{
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+#sobre{
+    background-attachment: fixed; /* Efeito de Texto fixado e imagem mexendo*/
+}
+
+.flex3{
+    flex-direction: row;
+    align-items: center;
+}
+
+/* = SEÇÃO WIREFRAME = */
+
+#wireframe{
+    background-attachment: fixed;
+}
+
+#texto_wire span{
+    display: inline;
+    color: #004560;
+    font-weight: 700;
+}
+
+#qrcode{
+    display: inline;
+}
+
+.flex6{
+    flex-direction: row-reverse;
+}
+
+address{
+    padding-top: 50px;
+}
+
+#icone_local{
+    display: inline;
+}
+
+#icone_mapa{
+    display: none;
+}
+
+#google_maps{
+    display: inline;
+}
+
+}
