@@ -1,0 +1,524 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: ps;
+    src: url(fontes/bubblegum-sans-regular.otf);
+}
+
+body{
+    background: rgb(136, 136, 136);
+}
+
+#interface{
+    background: rgb(31, 31, 31);
+    max-width: 1200px; /* Tamanho da tela */
+    margin: 0 auto; /* Centralizar Conteudo*/
+}
+
+#topo{
+    height: 130px; /* Altura */
+}
+
+#menu{
+    display: block;
+    position: absolute;
+    width: 800px; /* Largura */
+    top: 105px; /* Descer Item */
+    left: 550px; /*Mover Item Esquerda */
+    z-index: 1; /*Menu vai para frente da Imagem*/
+}
+
+#menu ul{
+    text-decoration: none; /* Tirar Sublinhado */
+    list-style: none; /* Tirar Bolinha */
+    font-size: 1.2em;
+    margin: 0px;
+    padding: 0px; /* Afastar espaço  Interno*/
+}
+
+#menu li{
+    float: left;
+    background: #000000;
+}
+
+#menu li a{
+    color: #FFF;
+    text-decoration: none;
+    margin: 0;
+    display: block;
+    padding: 5px 25px;
+}
+
+#menu li a:hover{ /* Quando passar o mouse encima*/
+    background: #FFF;
+    color: #000;
+    text-decoration: underline;
+}
+
+#menu li ul{ /*Sub-menu*/
+    display: none; /* Esconder */
+    font-size: 1.2em;
+}
+
+#menu li:hover ul{
+    display: block; /* Transformar em blocos*/
+    position: relative;
+}
+
+#menu li:hover li{
+    float: none; /* Ficar um embaixo do outro*/
+}
+
+/* BANNER */
+
+#anime1, #anime2{
+    max-width: 100%; /* ou colocar tamanho da imagem 1200px*/
+    height: auto;
+}
+
+#banner_anime{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 350px;
+    margin: 0px;
+}
+
+#banner_anime img{
+    position: absolute;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear; /* ease, linear, ease-in, ease-out, aliviar-in-ou, cubico-bezier*/
+}
+
+#anime1, #anime2:hover{ /* Quando passa na imagem uma some e a outra aparece */
+    opacity: 1;
+}
+
+#anime1:hover, #anime2{
+    opacity: 0;
+}
+
+section#cards{
+    position: relative;
+    max-width: 1200px;
+    height: auto;
+    left: 15px;
+}
+
+article.card{
+    float: left;
+    width: 360px;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.card h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFF;
+    font-size: 1.7em;
+}
+
+.card p{
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1;
+    padding: 0px 10px;
+    text-indent: 20px; /* Fazer Paragrafo*/
+    color: rgb(175, 175, 175)
+}
+
+.card a{
+    text-decoration: none;
+    background: #04BFAD;
+    font-size: 1.2em;
+    padding: 5px 30px;
+    color: #C1D4D9;
+    border-radius: 30px; /* Deixar borda do botão arredontado*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card a:hover{
+    background: #027373;
+}
+
+#rodape{
+    clear: both;
+    border-top: 2px solid #979DA6;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#rodape a{
+    text-decoration: none;
+}
+/* FIM DA PÁGINA INDEX */
+
+
+/* INICIO PÁGINA PS */
+#ps{
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    float: left; /* Flutuar para o lado esquerdo */
+    padding: 10px 20px;
+}
+
+#lateral{
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+    float: right;
+    margin-top: -275px;
+    padding-right: 20px;
+
+}
+
+#lateral img{
+    border-radius: 30px;
+}
+
+#ps h1{
+    font-family: ps;
+    font-size: 2em;
+    color: #5C6A73;
+    text-align: center;
+}
+
+#ps p{
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #D7D9D9;
+    text-indent: 20px;
+}
+
+/* PS Inferior */
+
+#ps_baixo{
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    float: right; /* Flutuar para o lado esquerdo */
+    padding: 20px 20px;
+}
+
+#ps_baixo h1{
+    font-family: ps;
+    font-size: 2em;
+    color: #5C6A73;
+    text-align: center;
+}
+
+#ps_baixo p{
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #D7D9D9;
+    text-indent: 20px;
+}
+
+#lateral_esq_ps{
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+    float: left;
+    margin-top: -275px;
+    padding-right: 20px;
+
+}
+
+#lateral_esq_ps img{
+    border-radius: 30px;
+    padding: 0px 0px 0px 20px;
+}
+
+/* INICIO PÁGINA XBOX */
+#console_xbox{
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    float: right; /* Flutuar para o lado direito */
+    padding: 10px 20px;
+}
+
+#lateral_xbox{
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+    float: left;
+    margin-top: -280px;
+    padding-right: 20px;
+
+}
+
+#lateral_xbox img{
+    border-radius: 50%;
+    padding: 0px 0px 0px 8px;
+    padding-top: 0px;
+}
+
+#console_xbox h1{
+    font-family: ps;
+    font-size: 2em;
+    color: #107C10;
+    text-align: center;
+}
+
+#console_xbox p{
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #5DC21E;
+    text-indent: 20px;
+}
+
+/*XBOX INFERIOR*/
+#console_xbox_baixo{
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    float: left; /* Flutuar para o lado esquerdo */
+    padding: 10px 20px;
+}
+
+#lateral_xbox_baixo{
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+    float: right;
+    margin-top: -280px;
+    padding-right: 20px;
+
+}
+
+#console_xbox_baixo h1{
+    font-family: ps;
+    font-size: 2em;
+    color: #107C10;
+    text-align: center;
+}
+
+#console_xbox_baixo p{
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #5DC21E;
+    text-indent: 20px;
+}
+
+/* PÁGINA FOTOS*/
+#album_fotos{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    list-style: none;
+}
+
+#album_fotos li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #979DA6;
+    background: #FFF;
+    -webkit-transition: all .4s ease-in;  /* Efeito de aproximação Zoom */
+}
+
+#album_fotos li .galeria{
+    opacity: 0;
+    color: #FFF;
+    background: rgba(0,0,0,5);
+    font-size: 0.9em;
+    line-height: 370px; /*Altura da linha */
+    padding: 5px;
+}
+
+#album_fotos li:hover .galeria{
+    opacity: 1; /* opacity : 0 = sumir / opacity : 1 = aparecer */
+}
+
+#album_fotos li.foto01{
+    background: url("imagens/galeria1.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album_fotos .foto01:hover{
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+#album_fotos li.foto02{
+    background: url("imagens/galeria2.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album_fotos .foto02:hover{
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+#album_fotos li.foto03{
+    background: url("imagens/galeria3.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album_fotos .foto03:hover{
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+#album_fotos li.foto04{
+    background: url("imagens/galeria4.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album_fotos .foto04:hover{
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+#album_fotos li.foto05{
+    background: url("imagens/galeria5.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album_fotos .foto05:hover{
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+#album_fotos li.foto06{
+    background: url("imagens/galeria6.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album_fotos .foto06:hover{
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+#album_fotos li:hover{
+    -webkit-transform: scale(1.5); /* zoom na foto */
+}
+
+#galeria2{
+    width: 800px;
+    height: 480px;
+    margin: 0 auto;
+    margin-top: 430px;
+}
+
+#galeria_foto{
+    list-style: none;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#galeria_foto li{
+    display: block;
+    float: left;
+    margin: 3px;
+    position: relative;
+}
+
+#galeria_foto img{
+    background: #979DA6;
+  /*  border: 1px solid #979DA6; */
+    padding: 5px;
+    width: 200px;
+    height: 165px;
+}
+
+.aumentar:hover{
+    -webkit-transform: scale(1.5);
+    z-index: 2;
+}
+
+h1.foto{
+    color: #FFF;
+    text-align: center;
+    font-family: ps;
+    font-size: 2.5em;
+}
+
+p.p_foto{
+    color: #FFF;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+
+/* PÁGINA VÍDEO E AÚDIO */
+#radio_tv{
+    width: 75%;
+    height: 580px;
+    background: url(imagens/radio-tv.png) no-repeat;
+    margin: 5px auto;
+}
+
+#musica{
+    display: block;
+    position: relative;
+    top: 490px;
+    left: 573px;
+}
+
+#filme{
+    display: block;
+    position: relative;
+    top: 55px;
+    left: 80px;
+    width: 456px;
+    height: 261px;
+}
+
+/* Pagina Contatos*/
+
+form{
+    width: 900px;
+    margin: auto;
+    background: #C1D4D9;
+}
+
+input, textarea{
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #979DA6;
+}
+
+legend{
+    color: #027373;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+fieldset{
+    border-color: #979DA6;
+    margin: 20px;
+}
+
+#sexo{
+    width: 150px;
+}
+
+.usuario{
+    background: url("imagens/icone-contato.png") no-repeat 95% 95% ;
+}
+
+.endereco{
+    background: url("imagens/icone-endereco.png") no-repeat 95% 95% ;
+}
+
+.mensagem{
+    background: url("imagens/icone-mensagem.png") no-repeat 95% 95% ;
+}
+
+.pedido{
+    background: url("imagens/ipgto.png") no-repeat 95% 95% ;
+}
