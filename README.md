@@ -1,5 +1,3 @@
-# projects_HTML
-Projects of HTML
 ![GitHub](https://img.shields.io/github/license/gabpereiraa/node?style=flat-square)
 # HTML E CSS
 ## Autor
