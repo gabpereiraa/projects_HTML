@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Doceria</title>
+    <link rel="shortcut icon" href="img/ico_logo-store.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div class="container-fluid">      
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <img src="img/doceria-store.png" alt="">
+                <!--<a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Doces
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="brigadeiro.html">Brigadeiro <span class="sr-only">(Página atual)</span></a>
+                        <a class="dropdown-item" href="cupcake.html">Cupcake</a>
+                        <a class="dropdown-item" href="donuts.html">Donuts</a>
+                      </div>
+
+                     <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Bolos
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="bolorecheado.html">Bolos Recheados</a>
+                        <a class="dropdown-item" href="bolopote.html">Bolos Pote</a>
+                 <!--       <a class="dropdown-item" href="#">Algo Mais</a> -->
+                      </div>
+                    </li>
+
+
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="ovopascoa.html">Ovos de Páscoa</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </nav>
+
+                 <!-------------------------------  Fim Barra Navegação --------------------------------------->
+                <!-------------------------------------- Alerta ----------------------------------------------->
+
+
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  <strong>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-exclamation-triangle-fill text-danger" viewBox="0 0 20 20">
+                      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+
+                    Somente para fins EDUCATIVOS!</strong> Obrigado!
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-exclamation-triangle-fill text-danger" viewBox="0 0 20 20">
+                      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!-------------------------------------- Fim Alerta ----------------------------------------------->
+
+                    <!----------------------------------- Barra de Localização Site ---------------------------------->
+
+     <nav aria-label="breadcrumb">
+     <ol class="breadcrumb">
+     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+     <li class="breadcrumb-item active" aria-current="page">Seu Pedido</li>
+     </ol>
+     </nav>   
+
+                    <!----------------------------------- Barra de Localização Site ---------------------------------->
+                    <!-------------------------------------- Nosso produtos ----------------------------------------------->
+
+              <div class="container py-5">
+                <h1 class="display-5 text-center font-italic font-weight-light">Faça seu Pedido</h1>
+              </div>
+
+              <!-------------------------------------- Fim Nosso produtos ----------------------------------------------->
+                    <!-------------------------------------- Informações Pessoais ----------------------------------------------->
+
+                    <div class="container ">
+                      <h3 class="display-5 text-center font-italic font-weight-light">Informações Pessoais</h3>
+                    </div>
+      
+                    <!-------------------------------------- Informações Pessoais ----------------------------------------------->
+
+                    <!---------------------------------------- Formulario -------------------------------------------->
+                    <form>
+                      <div class="form-row">
+
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" for="inputNomeComp">Nome e Sobrenome</span>
+                          </div>
+                          <input type="text" id="inputNomeComp" aria-label="First name" class="form-control" placeholder="Jose Silva" required>
+                        </div>
+                    <!--        <div class="col form-group col-md-6">
+                              <label for="inputEmail4">Nome</label>
+                              <input type="text" class="form-control" placeholder="José" required>
+                            </div>
+                            <div class="col form-group col-md-6">
+                              <label for="inputEmail4">Sobrenome</label>                              
+                              <input type="text" class="form-control" placeholder="Silva" required>
+                            </div> -->
+
+                            <div class="input-group pt-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" for="inputFone">Telefone</span>
+                              </div>
+                              <input type="text" id="inputFone" aria-label="Telefone" class="form-control" placeholder="1191234-1234" required>
+
+                            <div class="input-group-prepend pl-1">
+                              <span class="input-group-text" for="inputEmail4">Email</span>
+                            </div>                          
+                          <input type="email" class="form-control" id="inputEmail4" placeholder="josesilva@email.com">
+                            </div>
+                      </div>
+
+                      <div class="form-row">
+
+                      <div class="input-group pt-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" for="inputAddress">Endereço</span>
+                        </div>
+                        <input type="text" id="inputAddress" aria-label="First name" class="form-control" placeholder="Rua da Vila, 100" required>
+                        
+                        <div class="input-group-prepend pl-1">
+                          <span class="input-group-text" for="inputCity">Cidade</span>
+                        </div>                        
+                        <input type="text" id="inputCity" aria-label="Cidade" class="form-control" placeholder="São Paulo" required>
+                      </div>
+                      
+                    <!-------------------------------------- txt Produto ----------------------------------------------->
+
+                    <div class="container ">
+                      <h3 class="display-5 text-center font-italic font-weight-light pt-4"> Produto </h3>
+                    </div>
+      
+                    <!-------------------------------------- FIM txt produto ----------------------------------------------->
+                    <!-------------------------------------- Informações Pedido ----------------------------------------------->
+                        <div class="form-group col-md-6 pt-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" for="inputProduto"> Escolha o Produto</span>
+                               
+                          <select id="inputProduto" class="form-control">
+                            <option selected>Escolher...</option>
+
+                            <option disabled class="font-weight-bold">↓ Brigadeiros ↓</option>
+                            <option>Brigadeiro de Abacaxi</option>
+                            <option>Brigadeiro Verde</option>
+                            <option>Caixa Bridaeiro Variado</option>
+                            <option>Brigadeiro Gourmet</option>
+                            <option>Brigadeiro com Ameixa</option>
+                            <option>Brigadeiro Coração</option>
+                            <option>Brigadeiro Cereal</option>
+                            <option>Brigadeiro Ostra</option>
+
+                            <option disabled class="font-weight-bold" >↓ Cupcakes ↓</option>
+                            <option>Cupcake Frutas Vermelhas</option>
+                            <option>Cupcake Baunilha</option>
+                            <option>Cupcake Chocolate Branco e Amendoim</option>
+                            <option>Cupcake Beijinho</option>
+                            <option>Cupcake Morango</option>
+                            <option>Cupcake Chocolate Branco</option>
+                            <option>Cupcake Brigadeiro</option>
+                            <option>Cupcake Oreo</option>
+                            
+                            <option disabled class="font-weight-bold" >↓ Donuts ↓</option>
+                            <option>Donuts Ovomaltine</option>
+                            <option>Donuts M&Ms</option>
+                            <option>Donuts KitKat</option>
+                            <option>Donuts Doce de Leite</option>
+                            <option>Donuts Kinder Bueno</option>
+                            <option>Donuts Amendoim</option>
+                            <option>Donuts Chocolate DUO</option>
+                            <option>Donuts Simpsons / Morango</option>
+
+                            <option disabled class="font-weight-bold" >↓ Bolos Recheados ↓</option>
+                            <option>Bolo Chocolate Vulcão</option>
+                            <option>Bolo Chocolate Recheio DUO</option>
+                            <option>Bolo Chocolate Recheio Chocolate Branco</option>
+                            <option>Bolo Chocolate Meio Amargo</option>
+                            <option>Bolo Red Velvet</option>
+                            <option>Bolo Churros</option>
+                            <option>Bolo M&Ms e Kitkat</option>
+                            <option>Bolo Oreo</option>
+
+                            <option disabled class="font-weight-bold" >↓ Bolos de Pote ↓</option>
+                            <option>Bolo de Pote Ouro Branco</option>
+                            <option>Bolo de Pote Pistache Frutas Vermelhas</option>
+                            <option>Bolo de Pote Red Velvet</option>
+                            <option>Bolo de Pote Mousses</option>
+                            <option>Bolo de Pote Ninho com Nutella</option>
+                            <option>Bolo de Pote Maracujá com Beijinho</option>
+                            <option>Bolo de Pote Oreo</option>
+                            <option>Caneca Bolo de Pote Casadinho</option>                            
+
+                            <option disabled class="font-weight-bold" >↓ Ovos de Páscoa / Ovos de Colher ↓</option>
+                            <option>Ovo de Colher Brigadeiro Gourmet</option>
+                            <option>Ovo de Colher Laka com Oreo</option>
+                            <option>Ovo de Colher Brownie</option>
+                            <option>Ovo de Colher Brigadeiro</option>
+                            <option>Ovo de Colher Doce de Leite</option>
+                            <option>Ovo de Colher Oreo</option>
+                            <option>Ovo de Colher Prestigio</option>
+                            <option>Trio Ovos de Colher</option>                            
+
+                          </select>
+                         </div> 
+                        </div>
+                        <div class="form-group col-md-2">
+                          <div class="input-group-prepend pt-2">
+                            <span class="input-group-text" for="inlineFormCustomSelectPref">Quantidade</span>
+                          <select class="custom-select" id="inlineFormCustomSelectPref">
+                            <option selected>Escolher...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                        </div>
+                        </div>
+
+                        <div class="form-group col-md-6 ">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" for="inputProduto"> Escolha o Produto</span>
+                               
+                          <select id="inputProduto" class="form-control">
+                            <option selected>Escolher...</option>
+
+                            <option disabled class="font-weight-bold">↓ Brigadeiros ↓</option>
+                            <option>Brigadeiro de Abacaxi</option>
+                            <option>Brigadeiro Verde</option>
+                            <option>Caixa Bridaeiro Variado</option>
+                            <option>Brigadeiro Gourmet</option>
+                            <option>Brigadeiro com Ameixa</option>
+                            <option>Brigadeiro Coração</option>
+                            <option>Brigadeiro Cereal</option>
+                            <option>Brigadeiro Ostra</option>
+
+                            <option disabled class="font-weight-bold" >↓ Cupcakes ↓</option>
+                            <option>Cupcake Frutas Vermelhas</option>
+                            <option>Cupcake Baunilha</option>
+                            <option>Cupcake Chocolate Branco e Amendoim</option>
+                            <option>Cupcake Beijinho</option>
+                            <option>Cupcake Morango</option>
+                            <option>Cupcake Chocolate Branco</option>
+                            <option>Cupcake Brigadeiro</option>
+                            <option>Cupcake Oreo</option>
+                            
+                            <option disabled class="font-weight-bold" >↓ Donuts ↓</option>
+                            <option>Donuts Ovomaltine</option>
+                            <option>Donuts M&Ms</option>
+                            <option>Donuts KitKat</option>
+                            <option>Donuts Doce de Leite</option>
+                            <option>Donuts Kinder Bueno</option>
+                            <option>Donuts Amendoim</option>
+                            <option>Donuts Chocolate DUO</option>
+                            <option>Donuts Simpsons / Morango</option>
+
+                            <option disabled class="font-weight-bold" >↓ Bolos Recheados ↓</option>
+                            <option>Bolo Chocolate Vulcão</option>
+                            <option>Bolo Chocolate Recheio DUO</option>
+                            <option>Bolo Chocolate Recheio Chocolate Branco</option>
+                            <option>Bolo Chocolate Meio Amargo</option>
+                            <option>Bolo Red Velvet</option>
+                            <option>Bolo Churros</option>
+                            <option>Bolo M&Ms e Kitkat</option>
+                            <option>Bolo Oreo</option>
+
+                            <option disabled class="font-weight-bold" >↓ Bolos de Pote ↓</option>
+                            <option>Bolo de Pote Ouro Branco</option>
+                            <option>Bolo de Pote Pistache Frutas Vermelhas</option>
+                            <option>Bolo de Pote Red Velvet</option>
+                            <option>Bolo de Pote Mousses</option>
+                            <option>Bolo de Pote Ninho com Nutella</option>
+                            <option>Bolo de Pote Maracujá com Beijinho</option>
+                            <option>Bolo de Pote Oreo</option>
+                            <option>Caneca Bolo de Pote Casadinho</option>                            
+
+                            <option disabled class="font-weight-bold" >↓ Ovos de Páscoa / Ovos de Colher ↓</option>
+                            <option>Ovo de Colher Brigadeiro Gourmet</option>
+                            <option>Ovo de Colher Laka com Oreo</option>
+                            <option>Ovo de Colher Brownie</option>
+                            <option>Ovo de Colher Brigadeiro</option>
+                            <option>Ovo de Colher Doce de Leite</option>
+                            <option>Ovo de Colher Oreo</option>
+                            <option>Ovo de Colher Prestigio</option>
+                            <option>Trio Ovos de Colher</option>                            
+
+                          </select>
+                         </div> 
+                        </div>
+                        <div class="form-group col-md-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" for="inlineFormCustomSelectPref">Quantidade</span>
+                          <select class="custom-select" id="inlineFormCustomSelectPref">
+                            <option selected>Escolher...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                        </div>
+                      </div>
+
+
+                        
+
+                        <div class="form-group col-md-6 ">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" for="inputProduto"> Escolha o Produto</span>
+                               
+                          <select id="inputProduto" class="form-control">
+                            <option selected>Escolher...</option>
+
+                            <option disabled class="font-weight-bold">↓ Brigadeiros ↓</option>
+                            <option>Brigadeiro de Abacaxi</option>
+                            <option>Brigadeiro Verde</option>
+                            <option>Caixa Bridaeiro Variado</option>
+                            <option>Brigadeiro Gourmet</option>
+                            <option>Brigadeiro com Ameixa</option>
+                            <option>Brigadeiro Coração</option>
+                            <option>Brigadeiro Cereal</option>
+                            <option>Brigadeiro Ostra</option>
+
+                            <option disabled class="font-weight-bold" >↓ Cupcakes ↓</option>
+                            <option>Cupcake Frutas Vermelhas</option>
+                            <option>Cupcake Baunilha</option>
+                            <option>Cupcake Chocolate Branco e Amendoim</option>
+                            <option>Cupcake Beijinho</option>
+                            <option>Cupcake Morango</option>
+                            <option>Cupcake Chocolate Branco</option>
+                            <option>Cupcake Brigadeiro</option>
+                            <option>Cupcake Oreo</option>
+                            
+                            <option disabled class="font-weight-bold" >↓ Donuts ↓</option>
+                            <option>Donuts Ovomaltine</option>
+                            <option>Donuts M&Ms</option>
+                            <option>Donuts KitKat</option>
+                            <option>Donuts Doce de Leite</option>
+                            <option>Donuts Kinder Bueno</option>
+                            <option>Donuts Amendoim</option>
+                            <option>Donuts Chocolate DUO</option>
+                            <option>Donuts Simpsons / Morango</option>
+
+                            <option disabled class="font-weight-bold" >↓ Bolos Recheados ↓</option>
+                            <option>Bolo Chocolate Vulcão</option>
+                            <option>Bolo Chocolate Recheio DUO</option>
+                            <option>Bolo Chocolate Recheio Chocolate Branco</option>
+                            <option>Bolo Chocolate Meio Amargo</option>
+                            <option>Bolo Red Velvet</option>
+                            <option>Bolo Churros</option>
+                            <option>Bolo M&Ms e Kitkat</option>
+                            <option>Bolo Oreo</option>
+
+                            <option disabled class="font-weight-bold" >↓ Bolos de Pote ↓</option>
+                            <option>Bolo de Pote Ouro Branco</option>
+                            <option>Bolo de Pote Pistache Frutas Vermelhas</option>
+                            <option>Bolo de Pote Red Velvet</option>
+                            <option>Bolo de Pote Mousses</option>
+                            <option>Bolo de Pote Ninho com Nutella</option>
+                            <option>Bolo de Pote Maracujá com Beijinho</option>
+                            <option>Bolo de Pote Oreo</option>
+                            <option>Caneca Bolo de Pote Casadinho</option>                            
+
+                            <option disabled class="font-weight-bold" >↓ Ovos de Páscoa / Ovos de Colher ↓</option>
+                            <option>Ovo de Colher Brigadeiro Gourmet</option>
+                            <option>Ovo de Colher Laka com Oreo</option>
+                            <option>Ovo de Colher Brownie</option>
+                            <option>Ovo de Colher Brigadeiro</option>
+                            <option>Ovo de Colher Doce de Leite</option>
+                            <option>Ovo de Colher Oreo</option>
+                            <option>Ovo de Colher Prestigio</option>
+                            <option>Trio Ovos de Colher</option>                            
+
+                          </select>
+                         </div> 
+                        </div>
+
+                        <div class="form-group col-md-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" for="inlineFormCustomSelectPref">Quantidade</span>
+                          <select class="custom-select" id="inlineFormCustomSelectPref">
+                            <option selected>Escolher...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                        </div>
+                        </div>
+
+                      </div>
+                        
+                     <!-------------------------------------- Botão Finalizar Pedido ----------------------------------------------->
+
+                     <button type="submit" class="btn btn-primary btn-lg col-md-4">Finalizar Pedido!</button>
+
+                     <!-------------------------------------- FIM Botão Finalizar Pedido ----------------------------------------------->                 
+
+
+                    <!-------------------------------------- FIM Informações do Produto ----------------------------------------------->
+                    </form>
+                    <!--------------------------------------- Fim Formulario ----------------------------------------->
+                    <!-------------------------------------- Avaliação ----------------------------------------------->
+                 <div class="pt-2">
+                    <button type="button" class="btn btn-primary btn-lg btn-block rounded-0" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"> Deixe sua Avaliação</button>
+                   </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Avaliação</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                          <!--    <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Destinatário:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                              </div> -->
+   
+                              <div class="form-group">
+                               <div class="form-group">
+                                 <label for="exampleFormControlSelect1">Deixe Sua Nota:</label>
+                                 <select class="form-control" id="exampleFormControlSelect1">
+                                   <option>1</option>
+                                   <option>2</option>
+                                   <option>3</option>
+                                   <option>4</option>
+                                   <option>5</option>
+                                   <option>6</option>
+                                   <option>7</option>
+                                   <option>8</option>
+                                   <option>9</option>
+                                   <option>10</option>
+                                 </select>
+                               </div> 
+   
+                             
+   
+                              <div class="form-group">
+                                <label for="message-text" class="col-form-label">Deixe uma Mensagem:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                              
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+   
+                           </div>
+                           </div>
+   
+   
+   
+   
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-------------------------------------- Fim Avaliação ----------------------------------------------->
+   
+
+
+
+
+   
+     <!--INICIO FOOTER-->
+   
+     <footer class="container-fluid bg-light text-dark pt-2">
+       <section class="row text-center pt-3 pb-3">
+   
+         <div class="col-sm-4">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7659719961875!2d-46.57715648487169!3d-23.54091826672314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ec26cfdcfed%3A0x49e7eb66fd4f1f2!2sSenac%20Tatuap%C3%A9%20-%20Cel.%20Lu%C3%ADs%20Americano!5e0!3m2!1spt-BR!2sbr!4v1676501707586!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+   
+         <div class="col-sm-4">
+         <img src="img/local.png" alt="Endereço">
+         <p>
+           Nome da Rua, 123 <br>
+           Nome Bairro <br>
+           São Paulo - SP <br>
+         </p>
+   
+         <img src="img/email.png" alt="">
+         <p>seuemailaqui@seuemail.com</p>
+        </div>
+         
+        <div class="col-sm-4">
+         <img src="img/whatsapp.png" alt="">
+         <p>(11) 91234-1234</p> 
+   
+         <img src="img/fone.png" alt="">
+         <p>(11) 1234-1234 </p>
+       
+   
+         <a href=""><img src="img/instagram.png" alt=""></a>
+         <a href=""><img src="img/facebook.png" alt=""></a>
+         <a href=""><img src="img/twitter.png" alt=""></a>
+         <a href=""><img src="img/youtube.png" alt=""></a>
+       </div>
+         
+       <!-- <div class="col-sm-4"></div> -->
+   
+       </section>
+     </footer>
+   
+     <div class="container-fluid text-center pt-3 pb-3 bg-light text-dark">
+       <p> Somente para fins educativos</p>
+     </div>    
+       </div>
+   
+   <!-- Ordem: 1° jquery, 2° popper, 3° Bootstrap-->
+   <script src="bootstrap/jquery-3.3.1.slim.min.js"></script>
+   <script src="bootstrap/popper.min.js"></script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   </body>
+   </html>

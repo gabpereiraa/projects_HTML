@@ -1,6 +1,24 @@
 @charset "UFT-8";
 
-.logo{
-    width: 68px;
-    height: 68px;
+
+.mybackgoundtitle{
+    background-image: url(img/banner-title.png);
+}
+
+/*.cardimagebolo{
+    width: 365px;
+    height: 265px;
+}
+
+/*
+
+                    <div class="card-body">
+
+                    </div>
+
+
+*/
+
+.card-banner{
+    align-items: center;
 }
